@@ -1,0 +1,131 @@
+/* Default Button Style */
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+/* === Primary Button === */
+.custom-button.primary {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.custom-button.primary:hover {
+  background-color: #45a049;
+}
+
+/* === Secondary Button === */
+.custom-button.secondary {
+  background-color: white;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.custom-button.secondary:hover {
+  background-color: #f0f0f0;
+}
+
+/* === Danger Button === */
+.custom-button.danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.custom-button.danger:hover {
+  background-color: #d32f2f;
+}
+
+/* === Link Button === */
+.custom-button.link {
+  background: none;
+  color: #4caf50;
+  text-decoration: underline;
+}
+
+.custom-button.link:hover {
+  color: #388e3c;
+}
+
+/* === Outline Button === */
+.custom-button.outline {
+  background-color: transparent;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.custom-button.outline:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* === Ghost Button === */
+.custom-button.ghost {
+  background-color: transparent;
+  color: #4caf50;
+}
+
+.custom-button.ghost:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* === Floating Button === */
+.custom-button.floating {
+  background-color: #4caf50;
+  color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button.floating:hover {
+  background-color: #45a049;
+}
+
+/* === Toggle Button === */
+.custom-button.toggle {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.custom-button.toggle.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* === Loading Spinner === */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* === Disabled State === */
+.custom-button.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}

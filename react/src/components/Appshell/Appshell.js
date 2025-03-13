@@ -27,7 +27,7 @@ const styles = {
   header: {
     height: "60px",
     backgroundColor: "#f5f5f5",
-    padding: "0 20px",
+    padding: "10 20px",
     display: "flex",
     alignItems: "center",
     borderBottom: "1px solid #ddd",
